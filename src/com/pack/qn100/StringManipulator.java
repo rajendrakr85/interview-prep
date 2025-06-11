@@ -8,14 +8,14 @@ public class StringManipulator {
         char[] chars= {'H','e','l','l','o'};
         String str3=new String(chars);
         
-        boolean equeal1=str1.equals(str2);//false
-        System.out.println(equeal1);
+        boolean equeal1=str1.equals(str2);
+        System.out.println(equeal1); //false
         boolean equalsIgnoreCase = str1.equalsIgnoreCase("hello");
-        System.out.println(equalsIgnoreCase);
-        int comparable=str1.compareTo(str2);
-        System.out.println(comparable);
-        int compareIgnoreCase=str1.compareToIgnoreCase("HELLO");
-        System.out.println(compareIgnoreCase);
+        System.out.println(equalsIgnoreCase); //false
+        int comparable=str1.compareTo(str2); 
+        System.out.println(comparable);//-11
+        int compareIgnoreCase=str1.compareToIgnoreCase("HELLO");//11
+        System.out.println(compareIgnoreCase);//1
         
         System.out.println("str1 "+str1);
         System.out.println("str2 "+str2);

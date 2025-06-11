@@ -1,7 +1,5 @@
 package com.order.pack;
 
-import java.lang.classfile.TypeAnnotation.OffsetTarget;
-
 class Box<T>{
 	private T value;
 	

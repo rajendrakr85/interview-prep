@@ -17,6 +17,7 @@ public class Demmy {
 		.filter(entry->entry.getValue()==1)
 		.map(Map.Entry::getKey)
 		.findFirst());
+		
 		System.out.println();
 		
 		List<String> words = List.of("apple", "bat", "ball", "arm", "dog");

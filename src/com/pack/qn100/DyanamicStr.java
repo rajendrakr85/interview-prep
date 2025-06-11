@@ -36,6 +36,7 @@ public class DyanamicStr {
 		p.show();
 		
 		List<Integer>list=new LinkedList<Integer>();
+		
 	}
 
 }

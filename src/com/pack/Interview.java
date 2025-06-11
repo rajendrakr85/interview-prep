@@ -18,7 +18,8 @@ public class Interview {
 				.filter(sno->sno.startsWith("2"))
 				.collect(Collectors.toList()));
 		
-		System.out.println(al.stream().collect(Collectors.averagingInt(Integer::valueOf)));
+		System.out.println(al.stream()
+				.collect(Collectors.averagingInt(Integer::valueOf)));
 		
 		System.out.println(System.currentTimeMillis());
 		ExecutorService ex=Executors.newFixedThreadPool(50);

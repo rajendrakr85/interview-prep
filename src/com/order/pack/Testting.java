@@ -23,7 +23,8 @@ public class Testting {
 
 		System.out.println();
 		
-		Stream.of(new AbstractMap.SimpleEntry<>(String.class,mixedList.stream().filter(d->d instanceof String).collect(Collectors.toList())),
+		Stream.of(new AbstractMap.SimpleEntry<>(
+				String.class,mixedList.stream().filter(d->d instanceof String).collect(Collectors.toList())),
 				new AbstractMap.SimpleEntry<>(Integer.class,mixedList.stream().filter(d->d instanceof Integer).collect(Collectors.toList())),
 				new AbstractMap.SimpleEntry<>(ArrayList.class,mixedList.stream().filter(d->d instanceof ArrayList).collect(Collectors.toList())),
 				new AbstractMap.SimpleEntry<>(Boolean.class,mixedList.stream().filter(d->d instanceof Boolean).collect(Collectors.toList())),

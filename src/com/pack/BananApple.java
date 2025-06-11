@@ -11,7 +11,8 @@ public class BananApple {
 			
 			fruits.stream().map(fr->fr.split(":"))
 				.collect(Collectors.groupingBy(ar->ar[0],
-						Collectors.summingInt(ar->Integer.parseInt(ar[1])))).forEach((key,value)->System.out.println(key+" "+value));;
+						Collectors.summingInt(ar->Integer.parseInt(ar[1]))))
+				.forEach((key,value)->System.out.println(key+" "+value));;
 	}
 
 }

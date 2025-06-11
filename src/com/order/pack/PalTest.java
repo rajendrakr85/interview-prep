@@ -5,6 +5,7 @@ public class PalTest{
 		String str="madam";
 		int len=str.length();
 		boolean flag=false;
+		
 		for(int i=0;i<len/2;i++){
 			if(str.charAt(i)==str.charAt(len-i-1)){
 				flag=true;

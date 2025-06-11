@@ -13,7 +13,8 @@ public class BuzzTest {
 	public static void main(String[] args) {
 		String str="SOFTWAREENGINEER";
 		
-		str.chars().mapToObj(c->(char)c).map(String::valueOf).filter(c->"AEIOU".indexOf(c)>=0)
+		str.chars().mapToObj(c->(char)c).map(String::valueOf)
+		.filter(c->"AEIOU".indexOf(c)>=0)
 		.collect(Collectors.groupingBy(Function.identity(),TreeMap::new, Collectors.counting()))
 		.forEach((k,v)->System.out.println(k+" "+v));
 		
@@ -31,6 +32,7 @@ public class BuzzTest {
 		emap.put(e3, 2400);
 		emap.put(e5, 2500);
 		emap.put(e6, 2500);
+		
 		System.out.println(emap.get(e1));
 		System.out.println(emap.get(e6));
 		
